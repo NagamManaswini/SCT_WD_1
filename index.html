@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="header__title">RESTA<span>URANT</span></h1>
+        <ul class="header__menus">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#menus">MENUS</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+        <div class="header__menu-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+    </header>
+
+    <section id="home" class="section-home section-menu">
+        <div class="section-home__content">
+            <h2 class="section-title">Welcome to <span>Our Kitchen</span></h2>
+            <h1 class="section-home__title">Delicious Meals Prepared With Love</h1>
+            <p class="section-desc">Experience flavor combinations crafted from organic ingredients sourced straight from local farms.</p>
+            <div class="section-home__buttons">
+                <a href="#menus" class="primary-button hover-icon-right">Explore Menu <i class='bx bx-right-arrow-alt'></i></a>
+                <a href="#contact" class="light-button">Book Table</a>
+            </div>
+        </div>
+        <div class="section-home__img">
+            <img src="images/1img.png" alt="Featured Dish">
+        </div>
+    </section>
+    <section class="section-menus section-menu" id="menus">
+        <div class="section-menus__header">
+            <h2 class="section-title">Special <span>Menus</span></h2>
+            <p class="section-desc">Our selection of most popular dishes</p>
+        </div>
+        <div class="section-menus__container">
+            <div class="menu-card">
+                <img src="images/burger.png" alt="Menu Item" class="menu-card__img">
+                <h3 class="menu-card__title">Flame-Grilled Burger</h3>
+                <p class="menu-card__desc">Juicy beef patty with sharp cheddar and crispy greens.</p>
+                <div class="menu-card__footer">
+                    <span class="menu-card__price">$12.99</span>
+                    <button class="secondary-button"><i class='bx bx-cart-add'></i></button>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/pizza.png" alt="Menu Item" class="menu-card__img">
+                <h3 class="menu-card__title">Special Italian Pizza</h3>
+                <p class="menu-card__desc">Fresh mozzarella, plum tomatoes, fresh basil, and olive oil.</p>
+                <div class="menu-card__footer">
+                    <span class="menu-card__price">$14.50</span>
+                    <button class="secondary-button"><i class='bx bx-cart-add'></i></button>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="images/FriedChicken.png" alt="Menu Item" class="menu-card__img">
+                <h3 class="menu-card__title">Crunchy Fried Chicken</h3>
+                <p class="menu-card__desc">Crispy golden deep-fried chicken basket served with fries.</p>
+                <div class="menu-card__footer">
+                    <span class="menu-card__price">$11.00</span>
+                    <button class="secondary-button"><i class='bx bx-cart-add'></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="section-about section-menu">
+        <div class="section-about__img">
+            <img src="images/3pg.png" alt="Our Kitchen Story">
+        </div>
+        <div class="section-about__content">
+            <h2 class="section-title">Our <span>Story</span></h2>
+            <p class="section-desc">We speak the language of clean culinary execution. Over a decade of refining recipes ensures a pristine balance of local traditions and bold contemporary flavors brought directly to your table.</p>
+            <a href="#" class="light-button hover-icon-right">Read More <i class='bx bx-plus'></i></a>
+        </div>
+    </section>
+    <section class="section-services section-menu" id="services">
+        <div class="section-services__header">
+            <h2 class="section-title">We Provide <span>Best Services</span></h2>
+        </div>
+        <div class="section-services__container">
+            <div class="service-box">
+                <i class='bx bxs-dish service-box__icon'></i>
+                <h3 class="service-box__title">Quality Food</h3>
+                <p class="service-box__desc">Only clean, organic farm-fresh ingredients enter our prep station.</p>
+            </div>
+            <div class="service-box">
+                <i class='bx bxs-truck service-box__icon'></i>
+                <h3 class="service-box__title">Fast Delivery</h3>
+                <p class="service-box__desc">A secure internal delivery crew guarantees your dishes arrive piping hot.</p>
+            </div>
+            <div class="service-box">
+                <i class='bx bxs-cake service-box__icon'></i>
+                <h3 class="service-box__title">Event Catering</h3>
+                <p class="service-box__desc">Custom layout spreads structured precisely for celebratory dynamics.</p>
+            </div>
+        </div>
+    </section>
+    <section class="section-contact section-menu" id="contact">
+        <div class="section-contact__container">
+            <div class="section-contact__info">
+                <h2 class="section-title">Get In <span>Touch</span></h2>
+                <p class="section-desc">Ready to make a reservation or have questions regarding large catering configurations?</p>
+                <div class="contact-details">
+                    <p><i class='bx bxs-phone'></i> +91xxxxxxxxxx</p>
+                    <p><i class='bx bxs-envelope'></i> xxxx@restaurant.com</p>
+                </div>
+            </div>
+            <form class="section-contact__form" action="javascript:void(0);">
+                <input type="text" class="text-field" placeholder="Your Name" required>
+                <input type="email" class="text-field" placeholder="Email Address" required>
+                <textarea class="text-field text-field--textarea" rows="5" placeholder="Write message details..." required></textarea>
+                <button type="submit" class="primary-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2026 RESTAURANT. All rights reserved.</p>
+        <div class="footer__socials">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+        </div>
+    </footer>
+    </body>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+    // Initialize ScrollReveal
+    const sr = ScrollReveal({
+        reset: true,
+        delay: 300,
+        distance: '60px',
+        duration: 1500,
+    });
+
+    // COMPONENTS / GLOBAL TARGETS
+    sr.reveal('.section-title', { origin: 'top' });
+    sr.reveal('.section-desc', { origin: 'top', delay: 400 });
+
+    // SECTION HOME
+    sr.reveal('.section-home__content', { origin: 'left' });
+    sr.reveal('.section-home__img', { origin: 'right' });
+
+    // SECTION MENUS
+    sr.reveal('.menu-card', { origin: 'bottom', interval: 200 });
+
+    // SECTION ABOUT
+    sr.reveal('.section-about__img', { origin: 'left' });
+    sr.reveal('.section-about__content', { origin: 'right' });
+
+    // SECTION SERVICES
+    sr.reveal('.service-box', { origin: 'bottom', interval: 200 });
+
+    // SECTION CONTACT
+    sr.reveal('.section-contact__info', { origin: 'left' });
+    sr.reveal('.section-contact__form', { origin: 'right' });
+</script>
+<script>
+    const headerMenuToggle = document.querySelector('.header__menu-toggle');
+    const headerMenus = document.querySelector('.header__menus');
+
+    headerMenuToggle.addEventListener('click', () => {
+        headerMenus.classList.toggle('active');
+    });
+
+    // Close mobile panel during anchor navigation scroll jumps
+    document.querySelectorAll('.header__menus a').forEach(link => {
+        link.addEventListener('click', () => {
+            headerMenus.classList.remove('active');
+        });
+    });
+</script>
+
+</html>
